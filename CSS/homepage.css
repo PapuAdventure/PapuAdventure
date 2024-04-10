@@ -69,3 +69,177 @@ body {
     opacity: 1;
   }
 }
+
+/* PLACES */
+.places-container{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.places-image{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.places-image img{
+  width: 20%;
+  border-radius: 15px;
+  border: solid 2px white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.places-container h1, 
+.culinary-container h1{
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-size: 48px;
+  margin: 10px 0 10px 0;
+  font-style: normal;
+}
+.places-container h4, 
+.culinary-container h4{
+  font-family: sansation;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  color: #7D7D7D;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.card {
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+}
+
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4 ease-in-out;
+}
+
+.card:hover img {
+  box-shadow: 0 0 15px rgba(0, 0, 0);
+  filter:
+      grayscale(0.5) brightness(0.4)
+    
+}
+
+.card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h2,
+.content p {
+    opacity: 0;
+    transition: 0.4s 0.2s ease;
+}
+
+.content h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+  font-size: 35px;
+  font-family: "Salsa";
+  font-weight: 100;
+}
+
+.content p {
+    font-size: 20px;
+    font-family: sansation;
+    font-weight: bold;
+    line-height: 1.5;
+    transform: translateY(50%);
+}
+
+.card:hover .content h2 {
+    scale: 1;
+    opacity: 1;
+}
+
+.card:hover .content p {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* CULINARY CONTAINER */
+.culinary-container{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.papeda-container{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.papeda-container img{
+  width: 100%;
+  height: 100%;
+}
+
+.papeda-text{
+  position: absolute;
+  left: 55%;
+  right: 5%;
+  top: 20%;
+  font-size: 27px;
+  text-align: left;
+  padding: 5px 15px;
+  color: black;
+  font-family: urbanist;
+  font-weight: lighter;
+  border: solid 3px white;
+}
+
+.papeda-text::before{
+  content: "Papeda";
+  font-family: mansalva;
+  position: absolute;
+  top: -30px;
+  background-color: #857A3F;
+  padding: 0 5px;
+  font-size: 35px;
+}
+
+.learn-more{
+  position: absolute;
+  right: 100px;
+  bottom: 35px;
+  color: black;
+  text-decoration: none;
+}
+
+/* FONTS */
+@font-face {
+  font-family: sansation;
+  src: url(../Assets/Sansation_Regular.ttf);
+}
