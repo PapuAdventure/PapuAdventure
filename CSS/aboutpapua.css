@@ -34,112 +34,207 @@ body {
   left: 25px;
 }
 
-.about-text h1{
-    font-family: mansalva;
-    font-weight: 250;
-    font-size: 90px;
-    margin: 0;
+.about-text h1 {
+  font-family: mansalva;
+  font-weight: 250;
+  font-size: 90px;
+  margin: 0;
 }
 
-.about-text h4{
-    font-family: urbanist;
-    font-weight: 100;
-    font-size: 22px;
-    margin: 0;
+.about-text h4 {
+  font-family: urbanist;
+  font-weight: 100;
+  font-size: 22px;
+  margin: 0;
 }
 
-.about-container{
-    text-align: center;
+.about-container {
+  text-align: center;
 }
 
-.about-image{
-    padding: 50px;
+.about-image {
+  padding: 50px;
 }
 
-.about-image img{
-    width: 35%;
+.about-image img {
+  width: 35%;
 }
 
 .image-about-1,
 .image-about-2 {
-    position: relative;
-    border-radius: 15px;
-    transition: all 0.5s ease;
+  position: relative;
+  border-radius: 15px;
+  transition: all 0.5s ease;
 }
 
 .image-about-1 {
-    z-index: 2;
-    transform: translateX(50px) translateY(40px) rotate(-5deg);
+  z-index: 2;
+  transform: translateX(50px) translateY(40px) rotate(-5deg);
 }
 
 .image-about-2 {
-    z-index: 1;
-    transform: translateX(-100px) translateY(-10px) rotate(10deg);
-    opacity: 0.85;
+  z-index: 1;
+  transform: translateX(-100px) translateY(-10px) rotate(10deg);
+  opacity: 0.85;
 }
 
 .about-image:hover .image-about-1 {
-    z-index: 1;
-    opacity: 0.85;
-    transform: translateX(75px) translateY(20px) rotate(-5deg);
+  z-index: 1;
+  opacity: 0.85;
+  transform: translateX(75px) translateY(20px) rotate(-5deg);
 }
 
 .about-image:hover .image-about-2 {
-    opacity: 1;
-    z-index: 2;
-    transform: translateX(-125px) translateY(15px) rotate(10deg);
+  opacity: 1;
+  z-index: 2;
+  transform: translateX(-125px) translateY(15px) rotate(10deg);
 }
 
-.about-container h1{
+.about-container h1 {
+  font-family: mansalva;
+  font-size: 50px;
+  font-weight: 100;
+  margin: 10px;
+}
+
+.about-container h3 {
+  font-family: urbanist;
+  font-weight: 100;
+  font-size: 25px;
+  margin: 10px 0 20px 0;
+}
+
+.about-container p {
+  font-family: sansation;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
+
+.galery-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card-text {
+    text-align: left;
+  font-size: 24px;
+  font-family: sansation;
+  color: white;
+}
+
+.texts {
+    display: none;
+    animation: fadeIn 0.5s ease forwards;
+}
+
+.card:hover .texts {
+    display: block;
+    position: absolute;
+    max-width: 45%;
+    height: 100%;
+    padding: 0% 3% 0 7%;
+    backdrop-filter: blur(10px);
+    animation: fadeIn 0.5s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.texts h1{
+    /* text-indent: -5px; */
+    text-align: left;
     font-family: mansalva;
     font-size: 50px;
-    font-weight: 100;
-    margin: 10px;
-}
-
-.about-container h3{
-    font-family: urbanist;
-    font-weight: 100;
-    font-size: 25px;
-    margin: 10px 0 20px 0;
-}
-
-.about-container p{
-    font-family: sansation;
-    font-size: 20px;
-    margin-bottom: 50px;
-}
-
-.galery-images{
-    display: flex;
-    flex-direction: column;
-}
-
-.card{
-    position: relative;
-    display: flex;
-    width: 100%;
     margin: 0;
+    color: white;
+    font-weight: 200;
 }
 
-.card img{
-    width: 100%;
-}
-
-.card-text{
-    position: absolute;
-    top: 20px;
+.right {
+  right: 0%;
 }
 
 .card a{
-    position: absolute;
-    text-decoration: none;
-    color: black;
-    top: 0;
-    right: 0;
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+  font-family: sansation;
+  color: white;
+  right: 0;
 }
 
+.texts{
+    text-align: right;
+}
+
+.interest-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.interest-container h3 {
+  margin-left: 75px;
+  font-size: 35px;
+  font-family: urbanist;
+  font-weight: 100;
+}
+
+.cards {
+  display: flex;
+  justify-content: space-around;
+}
+
+.interest-card {
+  width: 20%;
+  text-align: center;
+  transition: ease 0.4s;
+}
+
+.interest-card:hover {
+  transform: scale(1.05);
+  transition: ease 0.4s;
+}
+
+.interest-card img {
+  width: 100%;
+  border-radius: 15px;
+}
+
+.interest-card p {
+  font-weight: 100;
+  font-family: urbanist;
+  font-size: 25px;
+  margin: 5px;
+}
+
+.interest-container a {
+  text-decoration: none;
+  color: black;
+}
+
+/* 
+.interest-card a{
+    width: 30%;
+} */
+
 @font-face {
-    font-family: sansation;
-    src: url(../Assets/Sansation_Regular.ttf);
-  }
+  font-family: sansation;
+  src: url(../Assets/Sansation_Regular.ttf);
+}
