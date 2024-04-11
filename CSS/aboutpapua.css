@@ -127,51 +127,51 @@ body {
 }
 
 .card-text {
-    text-align: left;
+  text-align: left;
   font-size: 24px;
   font-family: sansation;
   color: white;
 }
 
 .texts {
-    display: none;
-    animation: fadeIn 0.5s ease forwards;
+  display: none;
+  animation: fadeIn 0.5s ease forwards;
 }
 
 .card:hover .texts {
-    display: block;
-    position: absolute;
-    max-width: 45%;
-    height: 100%;
-    padding: 0% 3% 0 7%;
-    backdrop-filter: blur(10px);
-    animation: fadeIn 0.5s ease forwards;
+  display: block;
+  position: absolute;
+  max-width: 45%;
+  height: 100%;
+  padding: 0% 3% 0 7%;
+  backdrop-filter: blur(10px);
+  animation: fadeIn 0.5s ease forwards;
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
-.texts h1{
-    /* text-indent: -5px; */
-    text-align: left;
-    font-family: mansalva;
-    font-size: 50px;
-    margin: 0;
-    color: white;
-    font-weight: 200;
+.texts h1 {
+  /* text-indent: -5px; */
+  text-align: left;
+  font-family: mansalva;
+  font-size: 50px;
+  margin: 0;
+  color: white;
+  font-weight: 200;
 }
 
 .right {
   right: 0%;
 }
 
-.card a{
+.card a {
   text-decoration: none;
   color: black;
   font-size: 24px;
@@ -180,8 +180,8 @@ body {
   right: 0;
 }
 
-.texts{
-    text-align: right;
+.texts {
+  text-align: right;
 }
 
 .interest-container {
