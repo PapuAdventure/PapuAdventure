@@ -1,1 +1,355 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+/* IMAGE CAROUSEL */
+.carousel-container {
+  max-width: 100vw;
+  position: relative;
+  margin: auto;
+}
 
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 15px;
+  border-radius: 0 4px 4px 0;
+  font-size: 20px;
+  margin-top: -20px;
+  color: white;
+  user-select: none;
+  transition: 0.6s ease;
+}
+
+.next {
+  right: 0;
+  border-radius: 4px 0 0 4px;
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 10px;
+  border-radius: 50%;
+  border: 1px solid white;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot-container {
+  position: relative;
+  width: 100%;
+  top: -120px;
+  text-align: center;
+}
+
+.active {
+  background-color: white;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* PLACES */
+.places-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+}
+
+.places-image {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.places-image img {
+  width: 20%;
+  border-radius: 15px;
+  border: solid 2px white;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.places-container h1,
+.culinary-container h1,
+.accomodation-container h1 {
+  font-family: "Urbanist", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 750;
+  font-size: 48px;
+  margin: 10px 0 10px 0;
+  font-style: normal;
+}
+.places-container h4,
+.culinary-container h4,
+.accomodation-container h4 {
+  font-family: sansation;
+  font-optical-sizing: auto;
+  font-size: 24px;
+  color: #7d7d7d;
+  font-weight: bold;
+  font-style: normal;
+  margin-top: 10px;
+}
+
+.card {
+  width: 300px;
+  border-radius: 10px;
+  position: relative;
+  color: white;
+}
+
+.card .image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: 0.5s ease-in-out;
+}
+
+.card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border: 2px solid white;
+  border-radius: inherit;
+  opacity: 0;
+  transition: 0.4 ease-in-out;
+}
+
+.card:hover img {
+  box-shadow: 0 0 15px rgba(0, 0, 0);
+  filter: grayscale(0.5) brightness(0.4);
+}
+
+.card:hover::after {
+  opacity: 1;
+  inset: 20px;
+}
+
+.content {
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.content h2,
+.content p {
+  opacity: 0;
+  transition: 0.4s 0.2s ease;
+}
+
+.content h2 {
+  margin-bottom: 12px;
+  scale: 0.7;
+  font-size: 35px;
+  font-family: "Salsa";
+  font-weight: 100;
+}
+
+.content p {
+  font-size: 20px;
+  font-family: sansation;
+  font-weight: bold;
+  line-height: 1.5;
+  transform: translateY(50%);
+}
+
+.card:hover .content h2 {
+  scale: 1;
+  opacity: 1;
+}
+
+.card:hover .content p {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CULINARY CONTAINER */
+.culinary-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.papeda-container {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.papeda-container img {
+  width: 100%;
+  height: 100%;
+}
+
+.papeda-text {
+  position: absolute;
+  left: 55%;
+  right: 5%;
+  top: 20%;
+  font-size: 27px;
+  text-align: left;
+  padding: 5px 15px;
+  color: black;
+  font-family: urbanist;
+  font-weight: lighter;
+  border: solid 3px white;
+}
+
+.papeda-text::before {
+  content: "Papeda";
+  font-family: mansalva;
+  position: absolute;
+  top: -30px;
+  background-color: #857a3f;
+  padding: 0 5px;
+  font-size: 35px;
+}
+
+.learn-more {
+  position: absolute;
+  right: 100px;
+  bottom: 35px;
+  color: black;
+  text-decoration: none;
+}
+
+/* ACCOMODATION CONTAINER */
+.accomodation-container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  justify-content: space-around;
+}
+
+.accomodation-card {
+  display: flex;
+  flex-direction: column;
+  transition: ease 0.3s;
+}
+
+.accomodation-card:hover {
+  transform: scale(1.05);
+  transition: ease 0.3s;
+}
+
+.accomodation-card p {
+  font-family: sansation;
+  margin: 10px 0;
+  color: black;
+  font-weight: 100;
+  font-size: 30px;
+}
+
+.description-card {
+  width: max-content;
+}
+
+.star-img {
+  width: 30px;
+  height: 30px;
+}
+
+.rating-acc {
+  display: flex;
+  align-items: center;
+}
+
+.rating-acc p {
+  margin: 0 10px;
+  font-family: sansation;
+  color: black;
+  font-size: 15px;
+}
+
+.acc-card-img {
+  width: 100%;
+  border-radius: 15px;
+  transition: ease 0.3s;
+}
+
+.acc-card-img:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.card-container a {
+  text-decoration: none;
+  margin: 0;
+  width: 35%;
+}
+
+/* OVERVIEW */
+.overview {
+  background-image: url("../Assets/HomePage/Overview.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: mansalva;
+}
+
+.over-image {
+  margin-top: 25px;
+  width: 75%;
+}
+
+.overview h1 {
+  font-size: 64px;
+  margin: 0px;
+}
+
+.overview h4 {
+  font-size: 24px;
+  margin: 10px 0;
+}
+
+.overview a {
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  font-size: 40px;
+  transition: ease 0.5s;
+}
+
+.overview a:hover {
+  transform: scale(1.1);
+  transform: rotate(7.5deg);
+  transition: ease 0.5s;
+}
+
+/* FONTS */
+@font-face {
+  font-family: sansation;
+  src: url(../Assets/Sansation_Regular.ttf);
+}
