@@ -2,6 +2,29 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.5);;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: row;
+}
+
+.topnav a {
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a.active {
+  background-color: white;
+  color: grey;
+}
+
 /* IMAGE CAROUSEL */
 .carousel-container {
   max-width: 100vw;
