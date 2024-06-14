@@ -1,0 +1,58 @@
+li, a {
+    font-family: sansation;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-size: 18px;
+    color: #edf0f1;
+    text-decoration: none;
+  }
+  
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 90%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+  
+.logo {
+    cursor: pointer;
+    width: 90px;
+    margin: 0px;
+}
+  
+.nav_links {
+    list-style: none;
+}
+  
+.nav_links li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+  
+.nav_links li a {
+    transition: all 0.3s ease;
+}
+  
+.nav_links li a:hover {
+    color: #0ae21c;
+}
+  
+.nav_links .active {
+    padding: 9px 20px;
+    background-color: #656565be;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0s ease;
+}
+
+@font-face {
+    font-family: sansation;
+    src: url(../Assets/Sansation_Regular.ttf);
+}
