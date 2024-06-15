@@ -1,0 +1,241 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+.headings{
+    width: 1518px;
+    height: 700px;
+    position: relative;
+    overflow: hidden;
+}
+
+.headings img{
+    width: 1518px;
+    height: 650px;
+    object-fit: cover;
+}
+.header{
+    position: absolute;
+}
+
+.header-button{
+    position: absolute;
+}
+
+.food-button{
+    width: 271px;
+    height: 67px;
+    margin:470px 30px 10px 1200px;
+    border-radius: 50px;
+    color: white;
+    background-color: #B47171;
+    border: none;
+    opacity: 80%;
+    font-size: 24px;
+}
+
+.food-button:hover{
+    background-color: #a44949;
+}
+
+.restaurant-button:hover{
+    background-color:#cbbaba;
+}
+.restaurant-button{
+    width: 271px;
+    height: 67px;
+    margin:5px 30px 10px 1200px;
+    color: #B47171;
+    background-color: white;
+    border:none;
+    opacity: 80%;
+    border-radius: 50px;
+    font-size: 24px;
+}
+
+.kuliner-title{
+    margin: 80px 0px 20px 50px;
+    font-size: 96px;
+    color: white;
+}
+
+.kuliner-description{
+    margin: 0px 0px 20px 50px;
+    font-size: 32px;
+    color: white;
+}
+
+.food-text{
+    justify-content: center;
+    text-align: center;
+}
+
+.food-text h1{
+    margin-bottom: 5px;
+}
+
+.food-text p{
+    margin-top: 5px;
+}
+
+.restaurant-title{
+    justify-content: center;
+    text-align: center;
+}
+
+.restaurant-title h1{
+    margin-bottom: 5px;
+}
+
+.restaurant-title p{
+    margin-top: 5px;
+}
+
+.food-cards1{
+    display: flex;
+    position: relative;
+    height: 461px;
+    justify-content: space-evenly;
+    margin-top: 190px;
+}
+
+.food-cards2{
+    display: flex;
+    height: 461px;
+    justify-content: space-evenly;
+    margin-top: 190px;
+}
+
+.image-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+}
+
+.image-container img{
+    width: 245px;
+    height: 245px;
+    border: 10px solid rgba(120, 192, 168, 1);
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+    transform: translateY(-10%);
+}
+
+.image-container2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.image-container2 img{
+    width: 245px;
+    height: 245px;
+    border: 10px solid rgba(237, 181, 181, 1);;
+    border-radius: 50%;
+    position: absolute;
+    object-fit: cover;
+    transform: translateY(-10%);
+}
+
+.cards1{
+    width: 330px;
+    height: 330px;
+    border-radius: 58px;
+    text-align: center;
+    border: 1px solid rgba(120, 192, 168, 1);
+    box-shadow: 0 2px 8px  rgba(120, 192, 168, 1);
+    overflow: hidden;
+}
+
+
+.cards-content{
+    width: 330px;
+    height: 330px;
+    transform: translateY(30%);
+    padding: 0;
+    margin: 0;
+}
+
+.cards-content h3{
+    margin-bottom: 0;
+    font-size: 24px;
+    padding-bottom: 0;
+}
+
+.cards-content p{
+    text-align: left;
+    margin: 0 0 0 40px;
+    font-size: 16px;
+}
+
+.cards1 button{
+    width: 121px;
+    height: 41px;
+    border: none;
+    border-radius: 66px;
+    background-color: rgba(120, 192, 168, 1);
+    color: white;
+}
+
+.cards1 button:hover{
+    background-color: rgba(65, 153, 123, 1);
+}
+
+.cards2{
+    width: 330px;
+    height: 330px;
+    border-radius: 58px;
+    text-align: center;
+    border: 1px solid rgba(237, 181, 181, 1);
+    box-shadow: 0 2px 8px  rgba(237, 181, 181, 1);
+    
+}
+
+.cards2 button{
+    width: 121px;
+    height: 41px;
+    border: none;
+    border-radius: 66px;
+    color: white;
+    background-color: rgba(237, 181, 181, 1);
+}
+
+.cards2 button:hover{
+    background-color: rgb(221, 143, 143);
+    ;
+}
+.restaurants{
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+}
+
+.restaurants-content{
+    width: 394px;
+    height: 400px;
+}
+
+.restaurants-content h1{
+    font-size: 24px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.restaurants-content p{
+    font-size: 16px;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+
+.restaurants-content img{
+    width: 394px;
+    height: 275px;
+}
+
+.card-details{
+    opacity: 0%;
+}
