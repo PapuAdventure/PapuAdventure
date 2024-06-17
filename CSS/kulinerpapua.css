@@ -2,20 +2,42 @@ body{
     margin: 0;
     padding: 0;
 }
+
+html{
+    max-width: 1520px;
+    scroll-behavior: smooth;
+}
 .headings{
     width: 1518px;
-    height: 700px;
+    height: 731px;
     position: relative;
     overflow: hidden;
 }
 
 .headings img{
     width: 1518px;
-    height: 650px;
+    height: 731px;
     object-fit: cover;
 }
 .header{
     position: absolute;
+}
+
+.header p{
+    margin: 20px 0px 20px 50px;
+    font-size: 32px;
+    color: white;
+    font-family: sansation;
+}
+
+.header h1{
+    margin: 220px 0px 20px 50px;
+    font-size: 96px;
+    color: transparent;
+    font-family: "Urbanist", sans-serif;
+    font-weight: 50;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
 }
 
 .header-button{
@@ -25,13 +47,19 @@ body{
 .food-button{
     width: 271px;
     height: 67px;
-    margin:470px 30px 10px 1200px;
+    margin:570px 30px 10px 1200px;
     border-radius: 50px;
     color: white;
     background-color: #B47171;
     border: none;
     opacity: 80%;
+}
+
+.food-button a{
+    color: white;
     font-size: 24px;
+    font-family: sansation;
+    text-decoration: none;
 }
 
 .food-button:hover{
@@ -51,31 +79,29 @@ body{
     opacity: 80%;
     border-radius: 50px;
     font-size: 24px;
+    font-family: sansation;
+    text-decoration: none;
 }
 
-.kuliner-title{
-    margin: 80px 0px 20px 50px;
-    font-size: 96px;
-    color: white;
+.restaurant-button a{
+    color: #B47171;
+    font-size: 24px;
+    font-family: sansation;
+    text-decoration: none;
 }
-
-.kuliner-description{
-    margin: 0px 0px 20px 50px;
-    font-size: 32px;
-    color: white;
-}
-
 .food-text{
     justify-content: center;
     text-align: center;
 }
 
 .food-text h1{
-    margin-bottom: 5px;
+    margin: 100px 0 0 0;
+    font-family: sansation;
 }
 
 .food-text p{
-    margin-top: 5px;
+    margin-top: 0;
+    font-family: sansation;
 }
 
 .restaurant-title{
@@ -85,10 +111,12 @@ body{
 
 .restaurant-title h1{
     margin-bottom: 5px;
+    font-family: sansation;
 }
 
 .restaurant-title p{
     margin-top: 5px;
+    font-family: sansation;
 }
 
 .food-cards1{
@@ -97,6 +125,10 @@ body{
     height: 461px;
     justify-content: space-evenly;
     margin-top: 190px;
+}
+
+.hover:hover{
+    transform: scale(1.02);
 }
 
 .food-cards2{
@@ -111,7 +143,6 @@ body{
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-
 }
 
 .image-container img{
@@ -122,6 +153,7 @@ body{
     position: absolute;
     object-fit: cover;
     transform: translateY(-10%);
+    box-shadow: 0 2px 8px  rgba(120, 192, 168, 1);
 }
 
 .image-container2{
@@ -147,7 +179,7 @@ body{
     border-radius: 58px;
     text-align: center;
     border: 1px solid rgba(120, 192, 168, 1);
-    box-shadow: 0 2px 8px  rgba(120, 192, 168, 1);
+    box-shadow: 0 4px 4px  rgba(120, 192, 168, 1), 0 8px 8px rgba(120, 192, 168, 1);
     overflow: hidden;
 }
 
@@ -164,12 +196,15 @@ body{
     margin-bottom: 0;
     font-size: 24px;
     padding-bottom: 0;
+    font-family: sansation;
 }
 
 .cards-content p{
     text-align: left;
-    margin: 0 0 0 40px;
+    margin: 10px 0 0 40px;
     font-size: 16px;
+    font-family: sansation;
+    width: 253px;
 }
 
 .cards1 button{
@@ -191,7 +226,7 @@ body{
     border-radius: 58px;
     text-align: center;
     border: 1px solid rgba(237, 181, 181, 1);
-    box-shadow: 0 2px 8px  rgba(237, 181, 181, 1);
+    box-shadow: 0 4px 4px  rgba(237, 181, 181, 1), 0 8px 8px  rgba(237, 181, 181, 1);
     
 }
 
@@ -206,7 +241,6 @@ body{
 
 .cards2 button:hover{
     background-color: rgb(221, 143, 143);
-    ;
 }
 .restaurants{
     display: flex;
@@ -223,12 +257,14 @@ body{
     font-size: 24px;
     margin-bottom: 0;
     margin-top: 0;
+    font-family: sansation;
 }
 
 .restaurants-content p{
     font-size: 16px;
     margin-bottom: 0;
     margin-top: 0;
+    font-family: sansation;
 }
 
 .restaurants-content img{
@@ -237,5 +273,105 @@ body{
 }
 
 .card-details{
-    opacity: 0%;
+    display: none;
+    position: fixed; 
+    z-index: 1; 
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+    width: 100%; 
+    height: 100%;
+    transition: opacity 0.5s; 
+}
+
+.show-card1{
+    display: flex;
+    width: 875px;
+    height: 485px;
+    background-color: white;
+    border: none;
+    border-radius: 24px;
+    margin: auto;
+}
+
+.show-card-content{
+    background-color: white;
+}
+.show-card1 img{
+    width: 322px;
+    height: 485px;
+    object-fit: cover;
+    border: none;
+    border-radius: 24px 0 0 24px;
+}
+
+
+.show-card-content h2{
+    color: rgba(120, 192, 168, 1);
+    text-align: left;
+    font-size: 40px;
+    font-family: sansation;
+    margin: 30px 10px 0 50px;
+}
+
+.show-card-content p{
+    color: rgba(120, 192, 168, 1);
+    text-align: left;
+    font-size: 20px;
+    font-family: sansation;
+    width: 465px;
+    margin: 0 10px 0 50px;
+}
+
+.show-card-content button{
+    width: 121px;
+    height: 42px;
+    color: white;
+    background-color: rgba(120, 192, 168, 1);
+    border: none;
+    border-radius: 66px;
+    font-family: sansation;
+    margin: 0 0 0 350px;
+}
+
+.show-card-content button:hover{
+    background-color: rgba(65, 153, 123, 1);
+}
+
+.show-card-content2 h2{
+    color: rgba(237, 181, 181, 1);
+    text-align: left;
+    font-size: 40px;
+    font-family: sansation;
+    margin: 40px 10px 0 50px;
+}
+
+.show-card-content2 p{
+    color: rgba(237, 181, 181, 1);
+    text-align: left;
+    font-size: 20px;
+    font-family: sansation;
+    width: 465px;
+    margin: 0 10px 0 50px;
+}
+
+.show-card-content2 button{
+    width: 121px;
+    height: 42px;
+    color: white;
+    background-color: rgba(237, 181, 181, 1);
+    border: none;
+    border-radius: 66px;
+    font-family: sansation;
+    margin-left: 350px;
+}
+
+.show-card-content2 button:hover{
+    background-color: rgb(221, 143, 143);
+}
+@font-face {
+    font-family: sansation;
+    src: url(../Assets/Sansation_Regular.ttf);
 }

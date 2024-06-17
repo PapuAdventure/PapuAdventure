@@ -4,104 +4,135 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="C:\Users\Kennard\Documents\GitHub\PapuAdventure\CSS\kulinerpapua.css">
+    <link rel="stylesheet" href="C:\Users\Kennard\Documents\GitHub\PapuAdventure\CSS\navbar.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Mansalva&family=Salsa&family=Urbanist&display=swap" rel="stylesheet">
     <title>PapuAdventure</title>
 </head>
 <body>
+    <header>
+        <img class="logo" src="Assets/NavBar/LogoWeb.png" alt="logo">
+        <nav>
+          <ul class="nav_links">
+            <li><a href="homepage.html">Home</a></li>
+            <li><a href="AboutPapua.html">About</a></li>
+            <li><a href="destinations.html">Destinations</a></li>
+            <li><a href="kulinerPapua.html">Foods</a></li>
+            <li><a href="accomodation.html">Accomodation</a></li>
+          </ul>
+        </nav>
+    </header>
     <div class="headings">
         <div class="header">
-            <h1 class="kuliner-title">PAPUA <br>
+            <h1>PAPUA <br>
                 CULINARY
             </h1>
             <br>
-            <p class="kuliner-description">Discover the taste of Papua <br>
+            <p>Discover the taste of Papua <br>
                 like you've never before
             </p>
         </div>
         <div class="header-button">
-            <button class="food-button">Traditional Food</button> <br>
-            <button class="restaurant-button">Local Restaurant</button>
-        </div>
-        <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\kulinerTitle.png" alt="your image">
+            <button class="food-button"><a href="#foods">Traditional Food</a></button> <br>
+            <button class="restaurant-button"><a href="#restaurant">Local Restaurant</a></button>
+        </div>  
+        <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\kulinerTitle.png" alt="Kuliner Title">
     </div>
-    <div class="food-section">
+    <div id="foods" class="food-section">
         <div class="food-text">
             <h1>TRADITIONAL FOOD</h1><br>
             <p>"Exploring the Flavors of Papua: A Journey Through Traditional Cuisine"</p>
         </div>
         <div class="food-cards1">
-            <div class="cards1">
-                <div class="image-container">
-                    <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\asapAsap.jpg" alt="">
-                </div>
-                <div class="cards-content">
-                    <h3>Asap Asap Fish</h3> <br>
-                    <p>A type of fish that has been <br> 
-                        smoked until dry.</p><br>
-                    <button>Read More</button>
-                </div>
-            </div>
-            <div class="cards1">
-                <div class="image-container">
-                    <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\papeda.jpg" alt="">
-                </div>
-                <div class="cards-content">
-                    <h3>Papeda</h3> <br>
-                    <p>A type of congee made from sago <br> starch with a sticky texture and <br> bland taste.</p><br>
-                    <button>Read More</button>
+            <div class="hover">
+                <div class="cards1">
+                    <div class="image-container">
+                        <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\asapAsap.jpg" alt="Asap Asar Fish">
+                    </div>
+                    <div class="cards-content">
+                        <h3>Asap Asar Fish</h3> 
+                        <p>A type of fish that has been  
+                            smoked until dry.</p><br>
+                        <button id="asapOpen">Read More</button>
+                    </div>
                 </div>
             </div>
-            <div class="cards1">
-                <div class="image-container">
-                    <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\UdangSelingkuh.jpg" alt="">
+            <div class="hover">
+                <div class="cards1">
+                    <div class="image-container">
+                        <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\papeda.jpg" alt="Papeda">
+                    </div>
+                    <div class="cards-content">
+                        <h3>Papeda</h3> <br>
+                        <p>A type of congee made from sago starch with a sticky texture and bland taste.</p><br>
+                        <button id="papedaOpen">Read More</button>
+                    </div>
                 </div>
-                <div class="cards-content">
-                    <h3>Udang Selingkuh</h3> <br>
-                    <p>Udang selingkuh are freshwater <br> shrimp with shells as hard as <br> lobsters, and claws resembling <br> crab claws</p><br>
-                    <button>Read More</button>
+            </div>
+            <div class="hover">
+                <div class="cards1">
+                    <div class="image-container">
+                        <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\UdangSelingkuh.jpg" alt="Udang Selingkuh">
+                    </div>
+                    <div class="cards-content">
+                        <h3>Udang Selingkuh</h3> <br>
+                        <p>Udang selingkuh are freshwater 
+                            shrimp with shells as hard as lobsters, 
+                            and claws resembling crab claws</p><br>
+                        <button id="udangOpen">Read More</button>
+                    </div>
                 </div>
             </div>
         </div><br>
         <div class="food-cards2">
-            <div class="cards2">
-                <div class="image-container2">
-                    <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\sagoPlate.jpg" alt="">
-                </div>
-                <div class="cards-content">
-                    <h3>Sago Plate Cake</h3> <br>
-                    <p>A dried cake made from sago, usually eaten as a snack or side dish.</p><br>
-                    <button>Read More</button>
-                </div>
-            </div>
-            <div class="cards2">
-                <div class="image-container2">
-                    <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\sagoCaterpillar.jpg" alt="">
-                </div>
-                <div class="cards-content">
-                    <h3>Sago Catterpillar</h3> <br>
-                    <p>Skewered smoked caterpillars served resembling satay with soft filling.</p><br>
-                    <button>Read More</button>
+            <div class="hover">
+                <div class="cards2">
+                    <div class="image-container2">
+                        <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\sagoPlate.jpg" alt="Sago Plate Cake">
+                    </div>
+                    <div class="cards-content">
+                        <h3>Sago Plate Cake</h3> <br>
+                        <p>A dried cake made from sago, usually eaten as a snack or side dish.</p><br>
+                        <button id="SPOpen">Read More</button>
+                    </div>
                 </div>
             </div>
-            <div class="cards2">
-                <div class="image-container2">
-                    <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\ybf.jpg" alt="">
+            <div class="hover">
+                <div class="cards2">
+                    <div class="image-container2">
+                        <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\sagoCaterpillar.jpg" alt="Sago Catterpillar">
+                    </div>
+                    <div class="cards-content">
+                        <h3>Sago Catterpillar</h3> <br>
+                        <p>Skewered smoked caterpillars served resembling satay with soft filling.</p><br>
+                        <button id="SCOpen">Read More</button>
+                    </div>
                 </div>
-                <div class="cards-content">
-                    <h3>Yellow Broth Fish</h3> <br>
-                    <p>A fish cooked with Papuan yellow spices, served with papeda or rice.</p><br>
-                    <button>Read More</button>
+            </div>
+            <div class="hover">
+                <div class="cards2">
+                    <div class="image-container2">
+                        <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\ybf.jpg" alt="Yellow Broth Fish">
+                    </div>
+                    <div class="cards-content">
+                        <h3>Yellow Broth Fish</h3> <br>
+                        <p>A fish cooked with Papuan yellow spices, served with papeda or rice.</p><br>
+                        <button id="YBFOpen">Read More</button>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="restaurant-section">
+    <div id="restaurant" class="restaurant-section">
         <div class="restaurant-title">
             <h1>LOCAL RESTAURANT</h1><br>
             <p>"Savoring Tradition: A Culinary Journey Through Papua's Local Flavors"</p>
         </div>
         <div class="restaurants">
             <div class="restaurants-content">
-                <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\Yougwa.jpg" alt="">
+                <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\Yougwa.jpg" alt="Yougwa Restaurant">
                 <h1>YUGOWA RESTAURANT</h1><br>
                 <p>Sentani, Jayapura<p><br>
                 <p>Yougwa restaurant boasts a stunning view
@@ -110,7 +141,7 @@
                     features authentic Papuan traditional cuisine.</p><br>
             </div>
             <div class="restaurants-content">
-                <img src="c:\Users\Kennard\Documents\HCI\GitHub\PapuAdventure\Assets\KulinerPapua\Rumahlautcafe.jpg" alt="">
+                <img src="c:\Users\Kennard\Documents\HCI\GitHub\PapuAdventure\Assets\KulinerPapua\Rumahlautcafe.jpg" alt="Rumah Laut Resto">
                 <h1>RUMAH LAUT CAFE AND RESTO</h1><br>
                 <p>Numbai, Jayapura</p><br>
                 <p>Enjoy dinner at a restaurant above the sea with a 
@@ -119,7 +150,7 @@
                     popularity in Jayapura in terms of taste and view. </p><br>
             </div>
             <div class="restaurants-content">
-                <img src="c:\Users\Kennard\Documents\HCI\GitHub\PapuAdventure\Assets\KulinerPapua\Duta-Cafe-Lesehan-Atas-Laut.jpg" alt="">
+                <img src="c:\Users\Kennard\Documents\HCI\GitHub\PapuAdventure\Assets\KulinerPapua\Duta-Cafe-Lesehan-Atas-Laut.jpg" alt="Duta Cafe Lesehan">
                 <h1>DUTA CAFE LESEHAN ATAS LAUT</h1><br>
                 <p>Numbai, Jayapura</p><br>
                 <p>Experience stunning vistas, live music, savor fresh 
@@ -129,49 +160,92 @@
             </div>
         </div>
     </div>
-    <div class="card-details">
+    <div id="asap" class="card-details">
         <div class="show-card1">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <button></button>
-        </div>
-        <div class="show-card2">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <button></button>
-        </div>
-        <div class="show-card3">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <button></button>
-        </div>
-        <div class="show-card4">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <button></button>
-        </div>
-        <div class="show-card5">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <button></button>
-        </div>
-        <div class="show-card6">
-            <img src="" alt="">
-            <h2></h2>
-            <p></p>
-            <p></p>
-            <button></button>
+            <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\asapAsap.jpg" alt="Asap Asar Fish">
+            <div class="show-card-content">
+                <h2>Asap Asar Fish</h2> <br>
+                <p>Asar Fish is fish that is smoked until dry. The most commonly used fish are skipjack tuna, 
+                    yellowtail fish, and mackerel. Asar fish has long been a part of the life of the people of Jayapura. 
+                    Whether consumed daily or as souvenirs for tourists, this grilled fish is indeed delicious.</p> <br>
+                <p>Grilled fish is basically the same as smoked fish. The difference lies in the way it is smoked, 
+                    which is by positioning the fish diagonally on the side of the smoke.</p> <br>
+                <button id="asapClose">Go Back</button>
+            </div>
         </div>
     </div>
+    <div id="papeda" class="card-details">
+        <div class="show-card1">
+            <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\papeda.jpg" alt="Papeda">
+            <div class="show-card-content">
+                <h2>Papeda</h2> <br>
+                <p>Papeda, or sago porridge, is a type of congee made from sago starch. 
+                    Usually served with tongkol or burbara fish seasoned with turmeric. 
+                    Papeda is white and has a sticky texture resembling glue with a bland taste. Papeda is rich in fiber, 
+                    low in cholesterol, and nutritious. Papeda has many health benefits, 
+                    one of which is to cleanse the lungs for smokers.</p> <br>
+                <p>Papeda is included in Indonesia's Intangible Cultural Heritage by UNESCO.</p> <br>
+                <button id="papedaClose">Go Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="udang" class="card-details">
+        <div class="show-card1">
+            <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\UdangSelingkuh.jpg" alt="Udang Selingkuh">
+            <div class="show-card-content">
+                <h2>Udang Selingkuh</h2> <br>
+                <p>Udang selingkuh is a freshwater shrimp with a shell as hard as a lobster's and claws resembling those of a crab. 
+                    This uniqueness has earned it the nickname udang selingkuh, which translated into cheating shrimp, 
+                    as it is considered the result of a cheating affair between a lobster and a crab.</p> <br>
+                <p>This shrimp has a texture similar to lobster, with firm and fibrous flesh that is very tender and slightly sweet. 
+                    It is commonly served with oyster sauce, butter sauce, or Padang sauce with water spinach or papaya 
+                    flowers as accompaniments, making udang selingkuh dish taste even more special.</p> <br>
+                <button id="udangClose">Go Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="SP" class="card-details">
+        <div class="show-card1">
+            <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\sagoPlate.jpg" alt="Sago Plate Cake">
+            <div class="show-card-content2">
+                <h2>Sago Plate Cake</h2> <br>
+                <p>This food is a type of dried cake made from sago. Typically, the people of Papua enjoy sagu lempeng as a snack, 
+                    often paired with a cup of warm tea. Sagu lempeng can also be eaten with various dishes or served with thick gravy, 
+                    such as curry gravy. Sagu lempeng is quite nutritious, rich in carbohydrates and fiber.</p> <br>
+                <p>Sagu lempeng is part of Papua's culinary heritage and is often served at cultural events, 
+                    weddings, or other traditional ceremonies.</p> <br>
+                <button id="SPClose">Go Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="SC" class="card-details">
+        <div class="show-card1">
+            <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\sagoCaterpillar.jpg" alt="Sago Catterpillar">
+            <div class="show-card-content2">
+                <h2>Sago Catterpillar</h2> <br>
+                <p>Papua's sago caterpillar is usually served almost like satay. The savory sago caterpillar 
+                    has thin skin and soft flesh. These caterpillars are smoked first to make them slightly dry and more durable.
+                    They are then fried and eaten with rice..</p> <br>
+                <p>The Kamoro people believe that sago caterpillars are a healthy food due to their high protein and vitamin content.</p> <br>
+                <button id="SCClose">Go Back</button>
+            </div>
+        </div>
+    </div>
+    <div id="YBF" class="card-details">
+        <div class="show-card1">
+            <img src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\Assets\KulinerPapua\ybf.jpg" alt="Yellow Broth Fish">
+            <div class="show-card-content2">
+                <h2>Yellow Broth Fish</h2> <br>
+                <p>Yellow broth fish is fish cooked with typical yellow spices from Papua, 
+                    served with papeda or rice. Papeda with yellow broth fish is usually served during important celebrations.</p> <br>
+                <p>In its presentation, papeda is poured into a serving plate using a type of chopsticks called "gata-gata," 
+                    which is done by quickly rotating the dough so that the papeda dough does not break when rolled. 
+                    After adding the yellow broth, sip the papeda at the edge of the plate while sipping the fresh yellow broth.</p> <br>
+                <button id="YBFClose">Go Back</button>
+            </div>
+        </div>
+    </div>
+    <script src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\JavaScript\kulinerpage.js"></script>
+    <script src="C:\Users\Kennard\Documents\GitHub\PapuAdventure\JavaScript\navbar.js"></script>
 </body>
 </html>
