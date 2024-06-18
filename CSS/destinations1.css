@@ -1,0 +1,49 @@
+body {
+    font-family: "Urbanist", sans-serif;
+    font-optical-sizing: auto;
+    margin: 0;
+    padding: 0;
+}
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    display: block;
+    width: 100%;
+}
+
+.image-container:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 15%;
+    background: linear-gradient(to top,
+            rgba(255, 255, 255, 1),
+            rgba(255, 255, 255, 0));
+}
+
+.about-text {
+    position: absolute;
+    color: white;
+    top: 185px;
+    left: 25px;
+}
+
+.about-text h1 {
+    font-family: mansalva;
+    font-weight: 250;
+    font-size: 90px;
+    margin: 0;
+}
+
+.about-text h4 {
+    font-family: urbanist;
+    font-weight: 100;
+    font-size: 22px;
+    margin: 0;
+}
