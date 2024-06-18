@@ -72,6 +72,10 @@ body {
     transition: transform 0.2s ease;
 }
 
+.accommodation-content a{
+    text-decoration: none;
+    color: inherit;
+}
 .accommodation-content:hover img{
     transform: scale(1.10);
 }
