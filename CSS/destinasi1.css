@@ -1,0 +1,72 @@
+body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .header {
+    position: relative;
+    display: inline-block;
+}
+
+.header img {
+    display: block;
+    width: 100%;
+}
+
+.header::before {
+    content: "PAPUA";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 13vw;
+    font-family: urbanist;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.image-grid {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    gap: 50px;
+}
+
+.image-item {
+    position: relative;
+    width: 300px; /* Adjust as needed */
+    border-radius: 30px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: ease 0.5s;
+}
+
+.image-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: flex;
+    border-radius: 15px;
+}
+
+.image-item:hover {
+    transform: scale(1.1);
+    transition: ease 0.5s;
+}
+
+.image-item p {
+    color: black;
+    font-size: 1em;
+    text-align: center;
+    font-family: urbanist;
+}
+
+@font-face {
+    font-family: sansation;
+    src: url(../Assets/Sansation_Regular.ttf);
+  }
+
