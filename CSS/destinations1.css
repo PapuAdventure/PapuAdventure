@@ -27,23 +27,67 @@ body {
             rgba(255, 255, 255, 0));
 }
 
-.about-text {
-    position: absolute;
-    color: white;
-    top: 185px;
-    left: 25px;
+.main-info-container {
+    margin: 0px 150px;
 }
 
-.about-text h1 {
-    font-family: mansalva;
-    font-weight: 250;
-    font-size: 90px;
-    margin: 0;
+.main-info-container p {
+    width: 100%;
 }
 
-.about-text h4 {
-    font-family: urbanist;
-    font-weight: 100;
-    font-size: 22px;
-    margin: 0;
+.video-destination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.video-destination video {
+    width: 700px;
+    height: auto;
+}
+
+.desc {
+    font-size: 150%;
+}
+
+.video-destination video {
+    border-radius: 50px;
+    box-shadow: 5px 5px 100px rgba(0, 0, 0, 0.1);
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.content-container .more-desc p {
+    font-size: 20px;
+    width: 600px;
+}
+
+.content-container .place-map img {
+    width: 400px;
+    height: 400px;
+    padding: 30px 0px;
+    border-radius: 50px;
+}
+
+.activities-title {
+    font-size: 300%;
+}
+
+.activities {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin: 30px;
+}
+
+.activities img {
+    height: 500px;
+    width: 500px;
 }

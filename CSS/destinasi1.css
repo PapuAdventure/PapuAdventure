@@ -1,9 +1,9 @@
 body {
     margin: 0;
     padding: 0;
-  }
+}
 
-  .header {
+.header {
     position: relative;
     display: inline-block;
 }
@@ -29,6 +29,7 @@ body {
 
 .image-grid {
     margin-top: 50px;
+    margin-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,7 +39,8 @@ body {
 
 .image-item {
     position: relative;
-    width: 300px; /* Adjust as needed */
+    width: 300px;
+    /* Adjust as needed */
     border-radius: 30px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -68,5 +70,4 @@ body {
 @font-face {
     font-family: sansation;
     src: url(../Assets/Sansation_Regular.ttf);
-  }
-
+}
