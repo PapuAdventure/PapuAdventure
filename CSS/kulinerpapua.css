@@ -4,18 +4,17 @@ body{
 }
 
 html{
-    max-width: 1520px;
     scroll-behavior: smooth;
 }
 .headings{
-    width: 1518px;
+    width: 100%;
     height: 731px;
     position: relative;
     overflow: hidden;
 }
 
 .headings img{
-    width: 1518px;
+    width: 100%;
     height: 731px;
     object-fit: cover;
 }
@@ -63,12 +62,13 @@ html{
 }
 
 .food-button:hover{
-    background-color: #a44949;
+    background-color: rgba(174, 90, 90, 0.9);
 }
 
 .restaurant-button:hover{
-    background-color:#cbbaba;
+    background-color:rgba(194, 186, 186, 0.9);
 }
+
 .restaurant-button{
     width: 271px;
     height: 67px;
@@ -217,7 +217,7 @@ html{
 }
 
 .cards1 button:hover{
-    background-color: rgba(65, 153, 123, 1);
+    background-color: rgba(76, 176, 142, 1);
 }
 
 .cards2{
@@ -240,7 +240,7 @@ html{
 }
 
 .cards2 button:hover{
-    background-color: rgb(221, 143, 143);
+    background-color: rgba(231, 152, 152, 1);
 }
 .restaurants{
     display: flex;
@@ -333,11 +333,11 @@ html{
     border: none;
     border-radius: 66px;
     font-family: sansation;
-    margin: 0 0 0 350px;
+    float: right;
 }
 
 .show-card-content button:hover{
-    background-color: rgba(65, 153, 123, 1);
+    background-color: rgba(76, 176, 142, 1);
 }
 
 .show-card-content2 h2{
@@ -365,11 +365,11 @@ html{
     border: none;
     border-radius: 66px;
     font-family: sansation;
-    margin-left: 350px;
+    float: right;
 }
 
 .show-card-content2 button:hover{
-    background-color: rgb(221, 143, 143);
+    background-color: rgba(231, 152, 152, 1);
 }
 @font-face {
     font-family: sansation;
