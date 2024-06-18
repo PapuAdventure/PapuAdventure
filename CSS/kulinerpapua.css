@@ -41,6 +41,7 @@ html{
 
 .header-button{
     position: absolute;
+    right: 0px;
 }
 
 .food-button{
